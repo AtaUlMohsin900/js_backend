@@ -12,6 +12,10 @@ app.get('/login', (req, res) => {
     res.send('you are now logged in')
   })
 
+ app.get('/signin', (req, res) => {
+     res.send('<h1>Signing in</h1>')
+ })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
