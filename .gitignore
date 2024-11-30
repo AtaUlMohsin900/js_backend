@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+
+# Cache
+/.cache/
+
+.next/
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
