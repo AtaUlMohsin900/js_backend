@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 
 
@@ -16,6 +18,6 @@ app.get('/login', (req, res) => {
      res.send('<h1>Signing in</h1>')
  })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
