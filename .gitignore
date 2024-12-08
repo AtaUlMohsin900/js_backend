@@ -1,35 +1,36 @@
-# Node modules
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build output
-build/
+# dependencies
+/backend/node_modules
+/.pnp
+.pnp.js
 
-# Log files
-*.log
+# testing
+/coverage
 
-# Environment files
-.env
-.env.local
-.env.*.local
+# next.js
+/.next/
+/out/
 
-# Mac system files
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
 
-# Windows system files
-Thumbs.db
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDEs
-.idea/
-.vscode/
+# local env files
+.env*.local
+.env
 
-# Cache
-/.cache/
+# vercel
+.vercel
 
-.next/
-
-# next-video
-videos/*
-!videos/*.json
-!videos/*.js
-!videos/*.ts
-public/_next-video
+# typescript
+*.tsbuildinfo
+next-env.d.ts
