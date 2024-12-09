@@ -24,12 +24,12 @@ function App() {
       <h1>Backend Course</h1>
       <p>BOOKS:{books.length}</p>
       {
-        books.map((book, index) => {
+        books.map((book) => (
           <div key={book.id}>
             <h3>{book.title}</h3>
             <p>{book.auther}</p>
           </div>
-        })
+        ))
       }
     </>
   )
