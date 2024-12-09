@@ -4,6 +4,9 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send("server is ready");
+app.get('/login', (req, res)=>{
+    res.send("This is Login Page!")
+})
 
 });
 
