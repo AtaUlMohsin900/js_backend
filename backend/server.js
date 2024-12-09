@@ -8,10 +8,13 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     res.send("This is login page!")
 })
+app.get('/pages', (req, res) => {
+    res.send("This is pages page!")
+})
 
 const port = process.env.PORT || 3000
-app.listen(port,() =>{
+app.listen(port, () => {
     console.log(`Server at http://localhost:${port}`);
 
-     
+
 })  
