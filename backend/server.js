@@ -3,18 +3,12 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("<h1>Server is Running</h1>");
-});
-app.get('/login', (req, res) => {
-    res.send("This is login page!")
-})
-app.get('/pages', (req, res) => {
-    res.send("This is pages page!")
+    res.send("server is ready");
+
 })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server at http://localhost:${port}`);
+    console.log(`server at http://localhost:${port}`);
 
-
-})  
+})
