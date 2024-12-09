@@ -1,9 +1,23 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
+import axios from 'axios'
 
 function App() {
   const [books, setBooks] = useState([])
+
+  // useEffect has one callback and one dependency array.
+  useEffect(() => {
+    axios.get('/api/books')
+      .then((response) => {
+        setBooks(response.data)
+
+      })
+      .catch((error) => {
+        console.log(error);
+
+      })
+  })
 
   return (
     <>
