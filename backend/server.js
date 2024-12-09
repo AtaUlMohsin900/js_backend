@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("server is ready");
+    res.send("<h1>Server is Ready</h1>");
 
 });
 
