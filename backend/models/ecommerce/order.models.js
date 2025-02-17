@@ -20,7 +20,7 @@ const orderSchema =  new mongoose.Schema(
         },
         customer: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "User"
+            ref: "User",
         },
         orderItems: {
             type: [orderItemSchema]
